@@ -1,9 +1,10 @@
-let soma = 0;
-let i = 1;
-
-while (i <= 100) {
-    soma += i;  // Soma o valor de 'i' a 'soma'
-    i++;        // Incrementa 'i' em 1
+function verificarTamanho(str) {
+    if (str.length > 10) {
+        console.log("A string tem mais de 10 caracteres.");
+    } else {
+        console.log("A string tem 10 caracteres ou menos.");
+    }
 }
-
-console.log("O somatório dos números de 1 até 100 é: " + soma);
+verificarTamanho("Hello World");   // Saída: "A string tem mais de 10 caracteres."
+verificarTamanho("JavaScript");    // Saída: "A string tem 10 caracteres ou menos."
+verificarTamanho("Short");         // Saída: "A string tem 10 caracteres ou menos."
